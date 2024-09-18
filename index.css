@@ -1,0 +1,97 @@
+h1 {
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* .full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+} */
+
+.overlay {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    border: 0;
+    background: rgba(150, 150, 150, 0.6);
+    text-shadow: 1px 1px 1px white;
+    border: 1px solid #999;
+    position: absolute;
+    cursor: pointer;
+    top: 2px;
+    left: 2px;
+}
+
+/* 
+.thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+} */
+
+.gallery-container {
+    display: flex;
+    /* 使用Flexbox布局 */
+    position: absolute;
+    top: 15%;
+    width: 1100px;
+    height: 480px;
+}
+
+.thumb-bar {
+    flex: 1;
+    /* 初始设置为1，稍后我们会调整 */
+    margin: 0 5px;
+
+    /* 列与列之间的间隔，你可以根据需要调整 */
+}
+
+
+.full-img {
+    flex: 3;
+    /* 使.full-img占据的宽度是.thumb-bar的三倍 */
+    margin: 0 5px;
+    /* 全尺寸图片与其他列之间的间隔 */
+}
+
+.thumb-bar2 {
+    flex: 1;
+    /* 初始设置为1，稍后我们会调整 */
+    margin: 0 5px;
+    /* 列与列之间的间隔，你可以根据需要调整 */
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+.thumb-bar img,
+.thumb-bar2 img,
+.full-img img {
+    width: 100%;
+    /* 图片宽度占满整个列的宽度 */
+    display: block;
+    /* 图片作为块级元素显示 */
+}
+
+.thumb-bar img {
+    margin-bottom: 10px;
+    /* 图片之间的间隔 */
+}
+
+.thumb-bar2 img {
+    margin-bottom: 10px;
+    /* 图片之间的间隔 */
+}
